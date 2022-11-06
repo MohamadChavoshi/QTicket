@@ -1,5 +1,9 @@
 package com.easyetech.qticket
 
+import io.github.g0dkar.qrcode.QRCode
+import java.io.FileOutputStream
+
+
 object GenerateCode {
 
 
@@ -44,9 +48,23 @@ object GenerateCode {
 
 
 
+    // Code Exporter
 
 
-    // meisam pull test
+
+    // Code Generator & Exporter
+
+    fun CodeGenerator(QrcodeCount : Int, GUID : String , REC: String, FileType : String ) {
+        var i = 1
+        while (i <= QrcodeCount){
+            val fileOut = FileOutputStream("Code_$i.$FileType")
+            QRCode(GUID+REC).render().writeImage(fileOut)
+            i++
+        }
+    }
+
+
+
 
 
 
