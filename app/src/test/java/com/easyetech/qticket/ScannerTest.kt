@@ -1,5 +1,6 @@
-package com.example.barcodescanner
+package com.easyetech.qticket
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,8 @@ import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.barcodescanner.databinding.ActivityMainBinding
+import com.easyetech.qticket.databinding.ActivityMainBinding
+
 import java.io.IOException
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
@@ -18,12 +20,13 @@ import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
 import com.google.android.gms.vision.Detector.Detections
 
-class MainActivity : AppCompatActivity() {
+class ScannerTest : AppCompatActivity() {
     private val requestCodeCameraPermission = 1001
     private lateinit var cameraSource: CameraSource
     private lateinit var barcodeDetector: BarcodeDetector
     private var scannedValue = ""
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (ContextCompat.checkSelfPermission(
-                this@MainActivity, android.Manifest.permission.CAMERA
+                this@ScannerTest, Manifest.permission.CAMERA
             ) != PackageManager.PERMISSION_GRANTED
         ) {
             askForCameraPermission()
@@ -42,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val aniSlide: Animation =
-            AnimationUtils.loadAnimation(this@MainActivity, R.anim.scanner_animation)
+            AnimationUtils.loadAnimation(this@ScannerTest, R.anim.scanner_animation)
         binding.barcodeLine.startAnimation(aniSlide)
     }
 
@@ -102,12 +105,12 @@ class MainActivity : AppCompatActivity() {
                     //Don't forget to add this line printing value or finishing activity must run on main thread
                     runOnUiThread {
                         cameraSource.stop()
-                        Toast.makeText(this@MainActivity, "value- $scannedValue", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ScannerTest, "value- $scannedValue", Toast.LENGTH_SHORT).show()
                         finish()
                     }
                 }else
                 {
-                    Toast.makeText(this@MainActivity, "value- else", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ScannerTest, "value- else", Toast.LENGTH_SHORT).show()
 
                 }
             }
@@ -116,8 +119,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun askForCameraPermission() {
         ActivityCompat.requestPermissions(
-            this@MainActivity,
-            arrayOf(android.Manifest.permission.CAMERA),
+            this@ScannerTest,
+            arrayOf(Manifest.permission.CAMERA),
             requestCodeCameraPermission
         )
     }
