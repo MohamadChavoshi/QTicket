@@ -1,4 +1,4 @@
-package com.easyetech.qticket
+package com.example.barcodescanner
 
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.easyetech.qticket.databinding.ActivityMainBinding
+import com.example.barcodescanner.databinding.ActivityMainBinding
 import java.io.IOException
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
@@ -142,4 +142,3 @@ class MainActivity : AppCompatActivity() {
         cameraSource.stop()
     }
 }
-
