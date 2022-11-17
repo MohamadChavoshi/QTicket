@@ -1,6 +1,5 @@
 package com.easyetech.qticket
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
@@ -12,31 +11,29 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.easyetech.qticket.databinding.ActivityMainBinding
-
-import java.io.IOException
+import com.easyetech.qticket.databinding.ActivityScannerBinding
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
 import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
-import com.google.android.gms.vision.Detector.Detections
+import java.io.IOException
 
-class ScannerTest : AppCompatActivity() {
+class ScannerActivity : AppCompatActivity() {
+
     private val requestCodeCameraPermission = 1001
     private lateinit var cameraSource: CameraSource
     private lateinit var barcodeDetector: BarcodeDetector
     private var scannedValue = ""
-    private lateinit var binding: ActivityMainBinding
-
+    private lateinit var binding: ActivityScannerBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        binding = ActivityScannerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
         if (ContextCompat.checkSelfPermission(
-                this@ScannerTest, Manifest.permission.CAMERA
+                this@ScannerActivity, android.Manifest.permission.CAMERA
             ) != PackageManager.PERMISSION_GRANTED
         ) {
             askForCameraPermission()
@@ -45,7 +42,7 @@ class ScannerTest : AppCompatActivity() {
         }
 
         val aniSlide: Animation =
-            AnimationUtils.loadAnimation(this@ScannerTest, R.anim.scanner_animation)
+            AnimationUtils.loadAnimation(this@ScannerActivity, R.anim.scanner_animation)
         binding.barcodeLine.startAnimation(aniSlide)
     }
 
@@ -96,7 +93,7 @@ class ScannerTest : AppCompatActivity() {
                     .show()
             }
 
-            override fun receiveDetections(detections: Detections<Barcode>) {
+            override fun receiveDetections(detections: Detector.Detections<Barcode>) {
                 val barcodes = detections.detectedItems
                 if (barcodes.size() == 1) {
                     scannedValue = barcodes.valueAt(0).rawValue
@@ -105,12 +102,12 @@ class ScannerTest : AppCompatActivity() {
                     //Don't forget to add this line printing value or finishing activity must run on main thread
                     runOnUiThread {
                         cameraSource.stop()
-                        Toast.makeText(this@ScannerTest, "value- $scannedValue", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ScannerActivity, "value- $scannedValue", Toast.LENGTH_SHORT).show()
                         finish()
                     }
                 }else
                 {
-                    Toast.makeText(this@ScannerTest, "value- else", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ScannerActivity, "value- else", Toast.LENGTH_SHORT).show()
 
                 }
             }
@@ -119,8 +116,8 @@ class ScannerTest : AppCompatActivity() {
 
     private fun askForCameraPermission() {
         ActivityCompat.requestPermissions(
-            this@ScannerTest,
-            arrayOf(Manifest.permission.CAMERA),
+            this@ScannerActivity,
+            arrayOf(android.Manifest.permission.CAMERA),
             requestCodeCameraPermission
         )
     }
