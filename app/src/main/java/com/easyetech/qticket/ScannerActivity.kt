@@ -102,7 +102,7 @@ class ScannerActivity : AppCompatActivity() {
                     //Don't forget to add this line printing value or finishing activity must run on main thread
                     runOnUiThread {
                         cameraSource.stop()
-                        Toast.makeText(this@ScannerActivity, "value- $scannedValue", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@ScannerActivity, scannedValue, Toast.LENGTH_SHORT).show()
                         finish()
                     }
                 }else
