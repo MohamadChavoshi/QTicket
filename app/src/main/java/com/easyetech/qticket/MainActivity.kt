@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         //Test
         binding.ScanQrBtn.setOnClickListener {
-            val intent = Intent(this@MainActivity, ScannerActivity::class.java)
+            val intent = Intent(this@MainActivity, Login::class.java)
             startActivity(intent)
         }
     }

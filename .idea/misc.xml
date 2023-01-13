@@ -3,8 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_hide_pass_on.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_ion_arrow_back_circle_sharp.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_password.xml" value="0.3425" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_round_email.xml" value="0.3425" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_switch_on.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/login_btn.xml" value="0.3665" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/login_input.xml" value="0.3425" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/shadow.xml" value="0.3425" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/switch_style.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout-w936dp/activity_login.xml" value="0.27049180327868855" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_scanner.xml" value="0.17571059431524547" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1855" />
         <entry key="..\:/AndroidProjects/QTicket/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
       </map>
