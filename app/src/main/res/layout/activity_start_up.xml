@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startup.StartUp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/SlideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/BottomBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/BottomBox"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bottom_box_startup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="2dp"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+    <carbon.widget.Button
+        android:id="@+id/GetStartBtn"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/startup_btn"
+        android:elevation="10dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/YellowNormal"
+        android:textSize="20sp"
+        app:carbon_elevationShadowColor="@color/VioletNormal"
+        app:fontFamily="@font/sourcesansproregular"
+        app:layout_constraintEnd_toEndOf="@+id/BottomBox"
+        app:layout_constraintStart_toStartOf="@+id/BottomBox"
+        app:layout_constraintTop_toTopOf="@+id/BottomBox" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:text="Already Have An Account?  "
+        android:textColor="@color/WhiteNormal"
+        android:textSize="20sp"
+        app:fontFamily="@font/sourcesansproregular"
+        app:layout_constraintEnd_toEndOf="@+id/BottomBox"
+        app:layout_constraintStart_toStartOf="@+id/BottomBox"
+        app:layout_constraintTop_toBottomOf="@+id/GetStartBtn" />
+
+    <TextView
+        android:id="@+id/LoginBtnStartup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:text="Log in"
+        android:textColor="@color/VioletNormal"
+        android:textSize="20sp"
+        app:fontFamily="@font/sourcesansproregular"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/GetStartBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
