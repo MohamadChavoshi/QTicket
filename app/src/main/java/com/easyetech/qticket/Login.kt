@@ -13,6 +13,7 @@ import android.widget.Button
 import com.budiyev.android.codescanner.CodeScanner
 import com.easyetech.qticket.databinding.ActivityLoginBinding
 import com.easyetech.qticket.databinding.ActivityScannerBinding
+import com.easyetech.qticket.startup.StartUp
 import kotlin.math.absoluteValue
 
 class Login : AppCompatActivity() {
@@ -41,7 +42,7 @@ class Login : AppCompatActivity() {
         }
 
         binding.backBtnLogin.setOnClickListener {
-            val intent = Intent(this@Login, MainActivity::class.java)
+            val intent = Intent(this@Login, StartUp::class.java)
             startActivity(intent)
         }
 

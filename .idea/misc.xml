@@ -3,17 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/bottom_box_shadow_startup.xml" value="0.3665" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/bottom_box_startup.xml" value="0.359" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_hide_pass_on.xml" value="0.3675" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_ion_arrow_back_circle_sharp.xml" value="0.3675" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_password.xml" value="0.3425" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_round_email.xml" value="0.3425" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide1.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide2.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide3.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide4.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide5.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_slide6.xml" value="0.196" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/ic_switch_on.xml" value="0.3675" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/indicator_active_background.xml" value="0.196" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.196" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/login_btn.xml" value="0.3665" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/login_input.xml" value="0.3425" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/shadow.xml" value="0.3425" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/startup_btn.xml" value="0.359" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/startup_btn_shadow.xml" value="0.3665" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/drawable/switch_style.xml" value="0.3675" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout-w936dp/activity_login.xml" value="0.27049180327868855" />
@@ -21,8 +30,8 @@
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_scanner.xml" value="0.17571059431524547" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_signup.xml" value="0.33" />
-        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_start_up.xml" value="0.33" />
-        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/slider_item_container.xml" value="0.30012825994014536" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/activity_start_up.xml" value="0.31309627059843886" />
+        <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/layout/slider_item_container.xml" value="0.2" />
         <entry key="..\:/AndroidProjects/IDQS/QTicket/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1855" />
         <entry key="..\:/AndroidProjects/QTicket/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
       </map>

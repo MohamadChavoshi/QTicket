@@ -42,6 +42,7 @@ RecyclerView.Adapter<SlideItemsAdapter.SlideItemViewHolder> (){
             SlideTitle.text = SlidItem.SlideTitle
             SlideImage.setImageResource(SlidItem.SlideImage)
             SlideDescription.text = SlidItem.SlideDescription
+
         }
     }
 
