@@ -29,6 +29,7 @@ import com.easyetech.qticket.databinding.ActivityStartUpBinding
 
 class StartUp : AppCompatActivity() {
 
+
     private lateinit var slideItemsAdapter: SlideItemsAdapter
     private lateinit var binding: ActivityStartUpBinding
     private lateinit var slidedescriptionslid1 : SpannableString
@@ -57,6 +58,7 @@ class StartUp : AppCompatActivity() {
             val intent = Intent(this@StartUp, Signup::class.java)
             startActivity(intent)
             binding.GetStartBtn2.visibility = View.INVISIBLE
+
         }
         binding.LoginBtnStartup.setOnClickListener {
             val intent = Intent(this@StartUp, Login::class.java)
